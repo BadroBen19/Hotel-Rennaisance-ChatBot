@@ -99,18 +99,5 @@ Le système inclut une suite de tests complète dans [`test_rag.py`](test_rag.py
 
 Pour modifier l'interface utilisateur, éditez [`app.py`](app.py). Le CSS est intégré pour un style moderne et responsive.
 
-## 🤝 Contribution
-
-1. Fork le projet
-2. Créez une branche feature
-3. Commitez vos changements
-4. Poussez vers la branche
-5. Ouvrez une Pull Request
-
-## 📄 License
-
-[Ajoutez votre licence ici]
-
----
-
 **Développé avec ❤️ pour l'Hôtel Renaissance Tlemcen**
+
