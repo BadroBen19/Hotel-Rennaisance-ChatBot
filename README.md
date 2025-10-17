@@ -1,99 +1,116 @@
-# RAG System with ChromaDB
+# 🏨 Hôtel Renaissance Tlemcen - RAG Chatbot
 
-A Retrieval-Augmented Generation (RAG) system that enables semantic search and question-answering over your document collection using ChromaDB vector database and embeddings.
+Un système de chatbot intelligent utilisant la technologie RAG (Retrieval-Augmented Generation) pour répondre aux questions sur l'Hôtel Renaissance Tlemcen.
 
-## Features
+## 🚀 Technologies Utilisées
 
-- **Document Ingestion**: Populate a vector database with your documents
-- **Semantic Search**: Query documents using natural language
-- **Vector Embeddings**: Generate and store document embeddings for similarity search
-- **ChromaDB Integration**: Persistent vector storage with ChromaDB
-- **Testing Suite**: Comprehensive tests for RAG functionality
+- **Python 3.x** - Langage principal
+- **Streamlit** - Interface web interactive
+- **ChromaDB** - Base de données vectorielle
+- **Embeddings** - Modèles de vectorisation de texte
+- **RAG (Retrieval-Augmented Generation)** - Architecture de recherche et génération
 
-## Project Structure
+## 📁 Structure du Projet
 
 ```
-├── app.py                      # Main application entry point
-├── get_embedding_function.py   # Embedding model configuration
-├── populate_database.py        # Database population script
-├── query_data.py              # Query and retrieval logic
-├── test_rag.py                # Test suite for RAG system
-├── requirements.txt           # Python dependencies
-├── data/                      # Document storage directory
-└── chroma/                    # ChromaDB persistent storage
+├── app.py                      # Application Streamlit principale
+├── get_embedding_function.py   # Configuration des embeddings
+├── populate_database.py        # Script de population de la DB
+├── query_data.py              # Logique de requête RAG
+├── test_rag.py                # Tests du système
+├── requirements.txt           # Dépendances Python
+├── data/                      # Documents source
+└── chroma/                    # Base de données ChromaDB
 ```
 
-## Installation
+## 🛠️ Installation
 
-1. Clone the repository:
+1. **Cloner le repository**
 ```bash
 git clone <repository-url>
-cd <repository-name>
+cd HotelRennaisanceRaG
 ```
 
-2. Install dependencies:
+2. **Installer les dépendances**
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### 1. Populate the Database
-
-Add your documents to the `data/` directory, then run:
-
+3. **Populer la base de données**
 ```bash
 python populate_database.py
 ```
 
-This will process your documents and store their embeddings in the ChromaDB database.
+## 🎯 Utilisation
 
-### 2. Query the System
-
-Use the query system to ask questions about your documents:
-
+### Lancer l'application web
 ```bash
-python query_data.py
+streamlit run app.py
 ```
 
-### 3. Run the Application
+L'application sera accessible sur `http://localhost:8501`
 
-Start the main application:
-
-```bash
-python app.py
-```
-
-### 4. Run Tests
-
-Execute the test suite to verify functionality:
-
+### Tester le système
 ```bash
 python test_rag.py
 ```
 
-## Configuration
+### Requête directe
+```bash
+python query_data.py
+```
 
-- **Embeddings**: Configure your embedding model in [`get_embedding_function.py`](get_embedding_function.py)
-- **Database**: ChromaDB settings and persistence in [`chroma/`](chroma/)
-- **Documents**: Place your source documents in the [`data/`](data/) directory
+## ✨ Fonctionnalités
 
-## Dependencies
+- **Interface moderne** avec design responsive
+- **Questions prédéfinies** dans la sidebar
+- **Recherche en temps réel** avec indicateur de performance
+- **Réponses contextuelles** basées sur les documents de l'hôtel
+- **Architecture RAG** pour des réponses précises et pertinentes
 
-See [`requirements.txt`](requirements.txt) for a complete list of Python dependencies.
+## 🎨 Interface
 
-## Contributing
+L'application propose :
+- Design épuré avec palette de couleurs professionnelle
+- Zone de saisie intuitive
+- Exemples de questions dans la barre latérale
+- Affichage des temps de réponse
+- Style responsive pour mobile et desktop
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests to ensure functionality
-5. Submit a pull request
+## 📊 Exemples de Questions
 
-## License
+- "Les animaux de compagnie sont-ils autorisés ?"
+- "À quelle heure puis-je m'enregistrer ?"
+- "Quels sont les services disponibles ?"
+- "Où se trouve l'hôtel ?"
+- "Y a-t-il un restaurant ?"
 
-[Add your license information here]
+## 🔧 Configuration
 
-## Support
+- **Documents** : Placez vos fichiers dans le dossier [`data/`](data/)
+- **Embeddings** : Configurez dans [`get_embedding_function.py`](get_embedding_function.py)
+- **Base de données** : ChromaDB stockée dans [`chroma/`](chroma/)
 
-For questions or issues, please [open an issue](../../issues) on GitHub.
+## 🧪 Tests
+
+Le système inclut une suite de tests complète dans [`test_rag.py`](test_rag.py) pour vérifier le bon fonctionnement du RAG.
+
+## 📝 Développement
+
+Pour modifier l'interface utilisateur, éditez [`app.py`](app.py). Le CSS est intégré pour un style moderne et responsive.
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créez une branche feature
+3. Commitez vos changements
+4. Poussez vers la branche
+5. Ouvrez une Pull Request
+
+## 📄 License
+
+[Ajoutez votre licence ici]
+
+---
+
+**Développé avec ❤️ pour l'Hôtel Renaissance Tlemcen**
